@@ -1,0 +1,31 @@
+.forecast-card{
+
+}
+.fc{
+    width:250px
+}
+#current-card{
+    height: 400px;
+    font-size: xx-large;
+}
+#rightSide{
+    float: right;
+    width:77%;
+}
+#leftSide{
+    width:23%;
+    float: left;
+}
+
+.healthy{
+    background-color: green;
+}
+.moderate{
+    background-color: yellow;
+}
+.unhealthy{
+    background-color: orangered;
+}
+.dead{
+    background-color: red;
+}
