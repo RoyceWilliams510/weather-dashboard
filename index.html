@@ -27,40 +27,44 @@
         <h1 class="display-3">Weather Dashboard</h1>
         <p id="currentDay" class="lead"></p>
     </header>
+    
 
-    <div class = "container">
-        <!-- everything is stored in this row -->
+    <!-- left side search bar and history list -->
+    <div class = "container" id = "leftSide">
         <div class = "row">
-            <!-- left side search bar and history list -->
             <div class = "col">
                 <!-- this row is for the search bar -->
-                <div class = "row">
-
-
-
-                </div>
-                <!-- used for history ul -->
-                <div class = "row">
-
-                </div>
+                <input type = "text" id ="cityInput" placeholder="City Name" >
+                <button id = "submitCity" onclick="submitCity()">Search</button>
             </div>
-            <!-- right side with the weather -->
+        </div>
+        <!-- used for history ul -->
+        <div class = "row">
             <div class = "col">
-                <div class = "row">
-                    <!-- this will be for the card of todays weather -->
-                    <div class = "col">
-
-                    </div>
-                </div>
-                <!-- displays the 5 day forecast here -->
-                <div class = "row">
-
-                </div>
-
+    
             </div>
 
         </div>
     </div>
+
+
+    <!-- right side with the weather -->
+    <div class = "container" id = "rightSide">
+        <div class = "row">
+            <!-- this will be for the card of todays weather -->
+            <div class = "col">
+
+            </div>
+        </div>
+        <!-- displays the 5 day forecast here -->
+        <div class = "row">
+            <div class = "col">
+
+            </div>
+        </div>
+
+    </div>
+
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

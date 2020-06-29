@@ -10,3 +10,39 @@ $(document).ready(function(){
     })
 
 })
+// On click this function submits the text value in the text box
+function submitCity(){
+    // this variable stores the data
+    var cityName =$("#cityInput").val()
+    // clears the input field 
+    $("#cityInput").val("");
+    console.log(cityName);
+    // Need to check if the city has a result when searched
+
+    // Need to save it in local storage
+
+    // Need to append the city name to the table
+
+    // Need to change the weather displayed
+
+}
+
+
+// this reupdates the list on load and when a new city is submitted
+function createList(){
+    // checks local storage for the submitted citys
+
+}
+
+// checks if the submitted city has a corresponding result when searched
+function checksCity(location){
+    // this takes the argument of location which is the submitted string from the user input
+
+    
+
+}
+
+// renders the weather page based on the city selected/submitted
+function renderWeather(){
+    
+}
