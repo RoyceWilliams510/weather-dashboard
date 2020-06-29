@@ -2,13 +2,13 @@ $(document).ready(function(){
     $("#currentDay").text(moment().format("dddd, MMM Do YYYY"));
     if(JSON.parse(localStorage.getItem("savedCities")) !==null){
         savedCities = JSON.parse(localStorage.getItem("savedCities"));
+        createList();
     }
 
 })
 
 // global variables 
 var myKey = "6f02d570f4546e29df74e2c093e143c5"
-var isCity = true;
 var savedCities = [];
 
 // On click this function submits the text value in the text box
@@ -21,7 +21,6 @@ function submitCity(){
     // Need to check if the city has a result when searched
     checksCity(cityName);
     // Need to save it in local storage
-    createList();
     // Need to append the city name to the table
 
     // Need to change the weather displayed
@@ -33,6 +32,16 @@ function submitCity(){
 function createList(){
     // checks local storage for the submitted citys
 
+    console.log(savedCities);
+    var target = $("#cityList")
+    $("tbody").empty();
+    for(var i =0;i <savedCities.length; i++){
+        console.log(savedCities[i]);
+        var row = $("<tr><td><button class = 'cityBtn' value ='"+savedCities[i]+"' > "+savedCities[i]+" </button></td><tr>");
+        target.append(row);
+
+    }
+
 }
 
 // checks if the submitted city has a corresponding result when searched
@@ -43,8 +52,6 @@ function checksCity(location){
         statusCode:{
             404: function() {
                 alert('There are no citys that goes by this name');
-                isCity = false;
-                console.log(isCity);
                 return;
             },
             500: function() {
@@ -55,11 +62,11 @@ function checksCity(location){
         method: "GET"
       }).then(function(response){
         console.log(response);
-        if(isCity === true){
-            savedCities.push(location)
-            localStorage.setItem("savedCities",JSON.stringify(savedCities));
-        }
-        isCity = true;
+        savedCities.push(location)
+        localStorage.setItem("savedCities",JSON.stringify(savedCities));
+        createList();
+
+    
       })
 
 
