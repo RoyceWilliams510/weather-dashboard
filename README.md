@@ -33,12 +33,32 @@ The following image demonstrates the application functionality:
 ![weather dashboard demo](./Assets/06-server-side-apis-homework-demo.png)
 
 ## Review
+When the app is opened you will see the submit field for cities and an empty forecast card that will be updated by submitting a city name or selecting one of the past submitted cities in the table of buttons on the left side. By selecting a city you can see how the current forecast is and how the forecast will be at the same time of day in the following four days at the same time as the current forecast.
 
-You are required to submit the following for review:
+## Built With
+* [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [JQuery](https://learn.jquery.com/)
+* [Momentjs](https://momentjs.com/)
+* [OpenWeather API](https://openweathermap.org/api) 
 
-* The URL of the deployed application.
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+## Authors
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+ **Royce Williams** 
+
+- [Github](https://github.com/RoyceWilliams510/)
+- [LinkedIn](https://www.linkedin.com/in/royce-williams-3334261ab/)
+
+
+## Deployed Link
+
+* [See Live Site](https://roycewilliams510.github.io/weather-dashboard/)
+
+### Aknowledgments
+
+* [stack overview help](https://stackoverflow.com/questions/415602/set-value-of-textarea-in-jquery)
+## License
+
+This project is licensed under the MIT License 

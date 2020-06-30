@@ -45,7 +45,7 @@ function createList(){
     $("tbody").empty();
     for(var i =0;i <savedCities.length; i++){
         console.log(savedCities[i]);
-        var row = $("<tr><td><button class = 'cityBtn' value ='"+savedCities[i]+"' > "+savedCities[i]+" </button></td><tr>");
+        var row = $("<tr><td><button class = 'cityBtn btn btn-light' value ='"+savedCities[i]+"' > "+savedCities[i]+" </button></td><tr>");
         target.append(row);
 
     }
