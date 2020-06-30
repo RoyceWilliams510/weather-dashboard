@@ -58,7 +58,7 @@ When the app is opened you will see the submit field for cities and an empty for
 
 ### Aknowledgments
 
-* [stack overview help](https://stackoverflow.com/questions/415602/set-value-of-textarea-in-jquery)
+* [stack overview help](https://stackoverflow.com/questions/49874558/how-to-use-open-weather-api-icons)
 ## License
 
 This project is licensed under the MIT License 
